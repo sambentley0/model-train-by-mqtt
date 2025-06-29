@@ -1,0 +1,26 @@
+# Arduino build files
+*.elf
+*.bin
+*.hex
+*.map
+
+# PlatformIO build folders
+.pio/
+.pioenvs/
+
+# VSCode settings
+.vscode/
+
+# MacOS hidden files
+.DS_Store
+
+# Swap/backup files
+*.swp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Secrets
+secrets.h
