@@ -89,7 +89,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 void reconnect() {
   while (!client.connected()) {
-    if (client.connect(train_id)) {
+if (client.connect(train_id, mqtt_user, mqtt_pass)) {
       client.subscribe(topic_speed);
       client.subscribe(topic_direction);
       client.subscribe(topic_config_name);
